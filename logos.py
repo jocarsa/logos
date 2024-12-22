@@ -19,7 +19,7 @@ with open(svg_file, "r") as f:
 # Replace color and save a new SVG for each color
 for color in colors:
     new_svg_content = svg_content.replace("#ff0000", color)
-    output_file = os.path.join(output_folder, f"{color}.svg")
+    output_file = os.path.join(output_folder, f"jocarsa | {color}.svg")
     with open(output_file, "w") as f:
         f.write(new_svg_content)
 
